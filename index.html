@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="label">Inicio de sesión</h1>
+      <form
+        class="login_form"
+        method="post"
+        name="form"
+        onsubmit="return validated()"
+      >
+        <div class="font">Email</div>
+        <input autocomplete="off" type="text" name="email" placeholder="" />
+        <div id="email_error">Por favor ingresar Email</div>
+        <div class="font font2">Contraseña</div>
+        <input type="password" name="password" placeholder="" />
+        <div id="pass_error">Por favor ingresar contraseña</div>
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
